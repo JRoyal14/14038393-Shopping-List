@@ -1,40 +1,41 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
-<link rel="stylesheet" href="css/normalize.css" type="text/css" />
-</head>
-<body>
-<header style="margin-top:50px;"> 
-</header>
-    <a href="javascript:history.back()" >back</a>
+<!DOCTYPE html>
+<html>
+	<head>
+        <!-- Content Type Meta tag -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <!--Responsive Viewport Meta tag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        
+        
+		<title>Todo list app</title>
+        
+		<!-- Roboto font embed -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 
-<div class="input">
-<h3>Enter Item:</h3>
-<input type="text" class="custinput" id="item-input" placeholder="Enter shopping item..." autofocus>
-<button type="submit" class="btn">add</button>
-</div>
-<div class="list">
-<h3>List:</h3>
-<table class="items">
-<thead>
-<tr>
-<th class="edit" colspan="3"><span>edit</span></th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
-</div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
-<script src="js/main.js"></script>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="resources/css/reset.min.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	</head>
+	<body>
 
-<script type="text/javascript">
+		<header>
+			<input type="text" placeholder="Enter Shopping..." id="item">
+			<button id="add">
+			<img src="cross.png" alt="cross" width="42" height="42">
+			</button>
+		</header>
 
+		<div class="container">
+			<!-- Uncompleted tasks -->
+			<ol class="todo" id="todo">
+			</ol>
 
+			<!-- Completed tasks -->
+			<ol class="todo" id="completed"></ol>
+		</div>
 
-</script>
-
-</body>
+		<!-- JavaScripts -->
+		<script src="resources/js/main.js"></script>
+	</body>
 </html>
