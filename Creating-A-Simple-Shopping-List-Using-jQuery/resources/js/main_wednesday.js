@@ -1,5 +1,5 @@
 
-var data = (localStorage.getItem('todoList')) ? JSON.parse(localStorage.getItem('todoList')):{
+var data = (localStorage.getItem('todoList3')) ? JSON.parse(localStorage.getItem('todoList3')):{
   todo: [],
   completed: []
 };
@@ -54,7 +54,7 @@ function renderTodoList() {
 }
 
 function dataObjectUpdated() {
-  localStorage.setItem('todoList', JSON.stringify(data));
+  localStorage.setItem('todoList3', JSON.stringify(data));
 }
 
 function removeItem() {

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  background: #DC143C;
+  background: #0f0f0a;
   padding: 80px 0 0 0;
 }
 
@@ -21,7 +21,7 @@ header {
   top: 0;
   left: 0;
   z-index: 5;
-  background: #DC143C;
+  background: #0f0f0a;
   box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -115,7 +115,7 @@ ol.todo li {
   float: left;
   font-size: 14px;
   font-weight: 500;
-  color: #25b99a;
+  color: #0f0f0a;
   line-height: 22px;
 
   background: #fff;
@@ -167,30 +167,30 @@ ol.todo li .buttons button:last-of-type:before {
 }
 
 ol.todo li .buttons button svg {
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
 
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 40%;
 
   margin: -11px 0 0 -11px;
 }
 
 ol.todo li .buttons button.complete svg {
   border-radius: 11px;
-  border: 1.5px solid #25b99a;
+  border: 1.5px solid #00e600;
 
   transition: background 0.2s ease;
 }
 
 ol.todo#completed li .buttons button.complete svg {
-  background: #25b99a;
+  background: #00e600;
   border: 0px;
 }
 
 ol.todo:not(#completed) li .buttons button.complete:hover svg {
-  background: rgba(37, 185, 154, 0.75);
+  background: #00e600;
 }
 
 ol.todo:not(#completed) li .buttons button.complete:hover svg .fill {

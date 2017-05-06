@@ -1,36 +1,73 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
+  <style>
+  body {
+  background-color: #0f0f0a;
+  
+  
+  }
+  h1{
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        margin-top: 0cm;
+        padding: 10px 0px 15px 0px;
+	    background-image: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        border: 1px solid white; /* Green border */
+        border-radius: 30px;
+        
+  
+  }
+  .btn-group a {
+      background-color: white; /* Green background */
+      border: 3px solid black; /* Green border */
+      color: black; /* White text */
+      padding: 10px 0px; /* Some padding */
+      cursor: pointer; /* Pointer/hand icon */
+      width: 100%; /* Set a width if needed */
+      display: block; /* Make the buttons appear below each other */
+      text-align: center;
+      line-height: 50px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: 600;    
+      -webkit-appearance: none;
+      -moz-appearance: none; 
+       border-radius: 30px;
+      
+      
+   
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  }
 
-</head>
+  .btn-group a:not(:last-child) {
+      border-bottom: none; /* Prevent double borders */
+  }
 
+  /* Add a background color on hover */
+  .btn-group a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+  }
+  </style>
 <body>
 
-<div data-role="page" id="pageone">
-  <div data-role="header">
-    <h1>Welcome To Your Personal Shoping List</h1>
+<div data-role="header">
+    <h1 align="center">Welcome To Your Personal Shoping List </h1>
   </div>
-
-</div> 
-
-<div data-role="controlgroup" data-type="vertical">
-      <p>                </p>
-      <p>          .      </p>
+<div class="btn-group" data-type="vertical">
+<div data-role="controlgroup" data-type="vertical" class ="btn-group">
       
       <a rel="external" href="index.html" class="ui-btn">Sunday</a>
-      <a href="#" class="ui-btn">Monday</a>
-      <a href="#" class="ui-btn">Tuesday</a>
-      <a href="#" class="ui-btn">Wednesday</a>
-      <a href="#" class="ui-btn">Thursday</a>
-      <a href="#" class="ui-btn">Friday</a>
-      <a href="#" class="ui-btn">Saturday</a>
+      <a rel="external" href="monday.html" class="ui-btn">Monday</a>
+      <a rel="external" href="tuesday.html" class="ui-btn">Tuesday</a>
+      <a rel="external" href="wednesday.html" class="ui-btn">Wednesday</a>
+      <a rel="external" href="thursday.html" class="ui-btn">Thursday</a>
+      <a rel="external" href="friday.html" class="ui-btn">Friday</a>
+      <a rel="external" href="saturday.html" class="ui-btn">Saturday</a>
       
     </div>
-</body>
+</div>
 
+</body>
 </html>
